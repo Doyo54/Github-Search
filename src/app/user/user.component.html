@@ -1,9 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container">
     <div class="row justify-content-center">
-        <form action="#" class="form">
-                <input type="text" class="form-control" placeholder="Search Github Users..." name="searchKeywords">
+        <form action="#" class="form" #myForm="ngForm" (ngSubmit)="addUser(); myForm.resetForm()">
+                <input type="text" class="form-control" placeholder="Search Github Users..." name="Users" [(ngModel)]="Users">
                 <button class="btn btn-success"><i class="fa fa-search"></i>Search </button>
+                <p style="color: white; font-size: xx-large;">{{Users}}</p>
         </form>
     </div>
 </div>
