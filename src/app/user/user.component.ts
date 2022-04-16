@@ -8,10 +8,10 @@ import { Searches } from '../searches';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  constructor( private Service:GithubService) {  }
   searches:Searches
-public users:any 
-public Users:String;
+  public Users:String;
+
+  constructor( private Service:GithubService) {}
 
   public addUser(){
     this.Service.getUsers(this.Users).subscribe((data) =>{

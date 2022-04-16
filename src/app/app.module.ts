@@ -9,13 +9,15 @@ import { UserComponent } from './user/user.component';
 import { ReposComponent } from './repos/repos.component';
 import { importType } from '@angular/compiler/src/output/output_ast';
 import { GithubService } from './github.service';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     UserComponent,
-    ReposComponent
+    ReposComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
