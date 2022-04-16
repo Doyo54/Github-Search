@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../github.service';
 
 @Component({
   selector: 'app-user',
@@ -6,14 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  constructor( private Service:GithubService) {  }
 
-  constructor() {  }
-
-  ngOnInit(): void {
-  }
 public Users:String;
 
-  addUser(){
-    console.log(this.Users)
-  }
+  public addUser(){
+    this.Service.getUsers(this.Users).subscribe((data) =>{
+   console.log(data)
+  
+  })
+}
+ngOnInit(): void {
+}
 }
