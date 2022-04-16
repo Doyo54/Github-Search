@@ -4,12 +4,9 @@
         <form action="#" class="form" #myForm="ngForm" (ngSubmit)="addUser(); myForm.resetForm()">
                 <input type="text" class="form-control" placeholder="Search Github Users..." name="Users" [(ngModel)]="Users">
                 <button class="btn btn-success"><i class="fa fa-search"></i>Search </button>
-                <!-- <p style="color: white; font-size: xx-large;">{{Users}}</p> -->
         </form>
     </div>
-    <div class="row">
-        <div class="col">
+    <div *ngIf="searches">
             <app-user-details [searches]="searches"></app-user-details>
-         </div>
     </div>
 </div>

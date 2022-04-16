@@ -16,7 +16,6 @@ export class UserComponent implements OnInit {
   public addUser(){
     this.Service.getUsers(this.Users).subscribe((data) =>{
      this.searches = data;
-  
   })
 }
 ngOnInit(): void {
