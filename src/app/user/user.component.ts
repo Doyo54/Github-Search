@@ -15,8 +15,7 @@ public Users:String;
 
   public addUser(){
     this.Service.getUsers(this.Users).subscribe((data) =>{
-   console.log(data);
-   
+     this.searches = data;
   
   })
 }
