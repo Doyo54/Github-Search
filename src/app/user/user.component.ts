@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../github.service';
+import { Searches } from '../searches';
 
 @Component({
   selector: 'app-user',
@@ -8,12 +9,14 @@ import { GithubService } from '../github.service';
 })
 export class UserComponent implements OnInit {
   constructor( private Service:GithubService) {  }
-
+  searches:Searches
+public users:any 
 public Users:String;
 
   public addUser(){
     this.Service.getUsers(this.Users).subscribe((data) =>{
-   console.log(data)
+   console.log(data);
+   
   
   })
 }
