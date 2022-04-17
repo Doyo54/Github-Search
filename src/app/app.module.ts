@@ -10,6 +10,7 @@ import { ReposComponent } from './repos/repos.component';
 import { importType } from '@angular/compiler/src/output/output_ast';
 import { GithubService } from './github.service';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { RepoDetailsComponent } from './repo-details/repo-details.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     NavComponent,
     UserComponent,
     ReposComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    RepoDetailsComponent
   ],
   imports: [
     BrowserModule,
