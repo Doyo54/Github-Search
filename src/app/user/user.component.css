@@ -1,4 +1,6 @@
-
+.container{
+  margin-top: 5%;
+}
 input[type=text] {
     width: max-content;
     box-sizing: border-box;

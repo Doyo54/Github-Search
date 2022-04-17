@@ -1,20 +1,20 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
        <div class="card">
      <img [src]="searches.avatar_url" alt="">
+     <hr>
           <div class="card-body">
             <h1> Name: {{searches.login}}</h1>
-            <h2> Id: {{searches.id}}</h2>
-            <h3>Followers: {{searches.followers}}</h3>
-            <h4>Member since: {{searches.created_at|date}}</h4>
-            <h5>{{searches.bio}}</h5>
+            <h1> Id: {{searches.id}}</h1>
+            <h1>Followers: {{searches.followers}}</h1>
+            <h1>Member since: {{searches.created_at|date}}</h1>
+            <h1>{{searches.bio}}</h1>
+            <a [href]="searches.html_url" target="_blank" class="btn btn-success btn-sm"><button> Profile</button></a>
           </div>
         </div>
-   </div>
-   <div class="col-md-6" id="link">   
+   <!-- <div class="col-md-6" id="link">   
     <a [href]="searches.html_url" target="_blank" class="btn btn-success btn-sm">Profile</a>
-   </div>
+   </div> -->
   </div>
 </div>
  
