@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../github.service';
-import { Searches } from '../searches';
+import { Users } from '../users';
 
 @Component({
   selector: 'app-user',
@@ -8,7 +8,7 @@ import { Searches } from '../searches';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  searches:Searches
+  searches:Users
   public Users:String;
 
   constructor( private Service:GithubService) {}

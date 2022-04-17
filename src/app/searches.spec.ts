@@ -1,7 +1,7 @@
-import { Searches } from './searches';
+import { Users } from './users';
 
 describe('Searches', () => {
   it('should create an instance', () => {
-    expect(new Searches()).toBeTruthy();
+    expect(new Users()).toBeTruthy();
   });
 });

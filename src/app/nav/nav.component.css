@@ -32,12 +32,6 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
-
-
-
-
-
-
 h1::before {  
     transform: scaleX(0);
     transform-origin: bottom right;
