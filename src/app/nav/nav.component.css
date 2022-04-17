@@ -71,3 +71,7 @@ h1::before {
       grid-auto-flow: column;
     }
   }
+  p{
+    font-size: x-large;
+    color: gray;
+  }
