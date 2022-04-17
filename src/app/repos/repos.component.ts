@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
-
+import { GithubService } from '../github.service';
 @Component({
   selector: 'app-repos',
   templateUrl: './repos.component.html',
@@ -8,13 +7,15 @@ import { NgForm } from '@angular/forms';
 })
 export class ReposComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:GithubService) { }
+ public repos: any
+public repo:any[];
 
-  ngOnInit(): void {
-  }
- public repos: string
-
-addRepo(){
-  console.log(this.repos)
+public addRepo(){
+  this.service.getRepo(this.repos).subscribe((data) =>{
+    this.repo = data;
+  })
+}
+ngOnInit(): void {
 }
 }

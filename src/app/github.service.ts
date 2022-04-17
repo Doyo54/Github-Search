@@ -13,8 +13,8 @@ export class GithubService {
   getUsers(search): Observable<any>{
      return this.http.get<any>(`${environment.apiUrl}/${search}?`);
   }
-  getRepo(search): Observable<any>{
-    return this.http.get<any>(`${environment.apiUrl}/${search}/repos?`);
+  getRepo(search): Observable<any[]>{
+    return this.http.get<any[]>(`${environment.apiUrl}/${search}/repos?`);
   }
   
 }
