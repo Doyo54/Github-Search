@@ -6,8 +6,8 @@
                 <button class="btn btn-success"><i class="fa fa-search"></i>Search </button>
         </form>
     </div>
-    <div class="results" *ngFor="let repo of repo;let i=index">
-    <span style="color: red;" class="font-weight-bold">{{repo.name}}</span>
+    <div *ngIf="repo">
+  <app-repo-details [repo]="repo"></app-repo-details>
     </div>
 </div>
 

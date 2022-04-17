@@ -1,1 +1,8 @@
-<p>repo-details works!</p>
+<div class="container">
+    <div class="row">
+        <h1>Repositories</h1>
+        <div class="col" *ngFor="let repo of repo">
+            <p>{{repo.name}}</p>
+        </div>
+    </div>
+</div>
