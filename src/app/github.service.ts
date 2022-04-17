@@ -11,10 +11,10 @@ export class GithubService {
   constructor( private http:HttpClient) { }
 
   getUsers(search): Observable<any>{
-     return this.http.get<any>(`${environment.apiUrl}/${search}?`);
+     return this.http.get<any>(`${environment.apiUrl}/${search}?${environment.accessToken}`);
   }
   getRepo(search): Observable<any[]>{
-    return this.http.get<any[]>(`${environment.apiUrl}/${search}/repos?`);
+    return this.http.get<any[]>(`${environment.apiUrl}/${search}/repos?${environment.accessToken}`);
   }
   
 }

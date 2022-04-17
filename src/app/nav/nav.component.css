@@ -1,7 +1,9 @@
-nav{
+.nav{
     margin: 5% auto;
-    padding: 20px;
-    width: 600px;
+    padding: 0px;
+    width: 400px;
+    font-size: 70px;
+    background-color:grey;
 
 }
 a{
@@ -36,10 +38,10 @@ h1::before {
     color:gray;
   }
   
-  html {
+  /* html {
     block-size: 100%;
     inline-size: 100%;
-  }
+  } */
   
   @media (orientation: landscape) {
     body {

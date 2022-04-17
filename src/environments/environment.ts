@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: `https://api.github.com/users`,
-  accessToken: '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'
+  accessToken: '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'
   
 };
 
