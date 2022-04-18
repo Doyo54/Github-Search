@@ -1,15 +1,17 @@
 .container{
-    margin-top: 5%;
-    font-size: large;
+  margin-top: 5%;
+  font-size: large;
 }
+
 .card{
- width:fit-content;
- height: fit-content;
- border: 10px solid gray;
- color: black;
+  width:fit-content;
+  height: fit-content;
+  border: 10px solid gray;
+  color: black;
 }
+
 a{
-    display: inline-block;
+  display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
@@ -24,24 +26,28 @@ a{
   margin-left: 30%;
   margin-bottom: 10%;
 }
+
 a:hover {background-color: #3e8e41}
 
 a:active {
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-  .card-body{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.card-body{
   float: right;
   box-sizing: border-box;
   border: 10px solid gray;
   width: fit-content;
   margin-top: 8%;
   margin-right: 20%;
-  }
-  .card .card-body h1{
-    font-size: x-large;
-    width: 130%;
-  }
-  h2{
-    color: white;
-  }
+}
+
+.card .card-body h1{
+  font-size: x-large;
+  width: 130%;
+}
+
+h2{
+  color: white;
+}

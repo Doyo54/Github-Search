@@ -7,7 +7,8 @@ import { Users } from './users';
   providedIn: 'root'
 })
 export class GithubService {
-   users:Users
+  users:Users
+
   constructor( private http:HttpClient) {
     this.users = new Users("","",0,"",0,new Date());
    }
@@ -20,9 +21,10 @@ export class GithubService {
       html_url:any,
       followers:number,
       created_at:any
-  }
+    }
   let promise =new Promise<void>((resolve,reject)=>{
-     return this.http.get<ApiResponse>(`${environment.apiUrl}/${search}?${environment.accessToken}`).toPromise().then(response=>{
+     return this.http.get<ApiResponse>(`${environment.apiUrl}/${search}?${environment.accessToken}`)
+     .toPromise().then(response=>{
       this.users.id=response.id;
       this.users.avatar_url=response.avatar_url;
       this.users.login=response.login;
@@ -31,20 +33,14 @@ export class GithubService {
       this.users.html_url=response.html_url;
 
       resolve()
-  },
+    },
   error=>{
           reject(error)
-      }
-  )
-    })
+      })
+  })
     return promise
   }
   
-
-
-
-
-
   getRepo(search): Observable<any[]>{
     return this.http.get<any[]>(`${environment.apiUrl}/${search}/repos?${environment.accessToken}`);
   }

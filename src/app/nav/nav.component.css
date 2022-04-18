@@ -3,12 +3,12 @@ h1::before {
     transform-origin: bottom right;
   }
   
-  h1:hover::before {
+h1:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
   
-  h1::before {
+h1::before {
     content: " ";
     display: block;
     position: absolute;
@@ -19,7 +19,7 @@ h1::before {
     transition: transform .3s ease;
   }
   
-  h1 {
+h1 {
     position: relative;
     font-size: 5rem;
     margin-top: 10%;
@@ -28,12 +28,12 @@ h1::before {
     font-weight: bold;
   }
   
-  @media (orientation: landscape) {
+@media (orientation: landscape) {
     body {
       grid-auto-flow: column;
     }
   }
-  p{
+p{
     font-size: x-large;
     color: gray;
   }

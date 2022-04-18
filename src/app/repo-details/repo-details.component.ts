@@ -7,6 +7,7 @@ import { Repos } from '../repos';
 })
 export class RepoDetailsComponent implements OnInit {
 @Input() repo:Repos[];
+
   constructor() { }
 
   ngOnInit(): void {

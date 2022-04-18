@@ -12,17 +12,15 @@ export class UserComponent implements OnInit {
   public Users:String;
   public showUser=false;
 
-addUser(){
+ addUser(){
   this.Service.getUsers(this.Users)
   this.showUser = true;
-}
+ }
 
+ constructor( public Service:GithubService) {}
 
-
-
-  constructor( public Service:GithubService) {
-  }
-ngOnInit() {
+ ngOnInit() {
   this.users = this.Service.users; 
-}
+ }
+
 }

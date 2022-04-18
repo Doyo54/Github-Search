@@ -1,26 +1,31 @@
 .container{
-color: black;
-text-align: center;
-margin-top: 5%;
+    color: black;
+    text-align: center;
+    margin-top: 5%;
 }
+
 h1{
     font-weight: bold;
     margin-top: 2%;
     font-size: 55px;
 }
+
 h2{
     margin-top: 3%;
 	font-family: 'darker_grotesqueblack';
 	font-size: 40px;
 }
+
 h3, h4{
     color: gray;
 }
+
 .card,.card-body{
    font-size: xx-large;
    background-color:lightgray;
    border-radius: 1%;
-   }
-   .card-body .list-group h2 a:hover{
+}
+   
+.card-body .list-group h2 a:hover{
        background-color: lightblue;
-   }
+}

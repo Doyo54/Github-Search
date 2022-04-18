@@ -9,14 +9,16 @@ import { Repos } from '../repos';
 export class ReposComponent implements OnInit {
 
   constructor(private service:GithubService) { }
+
  public repos: any
-public repo:Repos[];
+ public repo:Repos[];
 
 public addRepo(){
   this.service.getRepo(this.repos).subscribe((data) =>{
     this.repo = data;
   })
 }
-ngOnInit(): void {
-}
+
+ngOnInit(): void {}
+
 }
