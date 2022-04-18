@@ -1,4 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<ul>
+    <li><a  routerLink="/user" routerLinkActive='active'> User</a></li>
+     <li><a  routerLink="/repos" routerLinkActive='active'>Repository</a></li>
+</ul>
 <div class="container">
     <div class="row justify-content-center">
         <form action="#" class="form" #myForm="ngForm" (ngSubmit)="addUser(); myForm.resetForm()">
@@ -6,7 +10,7 @@
                 <button class="btn btn-success"><i class="fa fa-search"></i>Search </button>
         </form>
     </div>
-    <div *ngIf="searches">
-            <app-user-details [searches]="searches"></app-user-details>
+    <div *ngIf="showUser">
+            <app-user-details [users]="users"></app-user-details>
     </div>
 </div>

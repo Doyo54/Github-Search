@@ -2,16 +2,16 @@
   <div class="row">
     <div class="col">
        <div class="card">
-     <img [src]="searches.avatar_url" alt="">
+     <img [src]="users.avatar_url" alt="">
     </div>
     </div>
      <div class="col">
           <div class="card-body">
-            <h2> Name: {{searches.login}}</h2>
-            <h2> Id: {{searches.id}}</h2>
-            <h2>Followers: {{searches.followers}}</h2>
-            <h2>Member since: {{searches.created_at|date}}</h2>
-            <a [href]="searches.html_url" target="_blank" class="btn btn-success btn-sm"> Profile</a>
+            <h2> Name: {{users.login}}</h2>
+            <h2> Id: {{users.id}}</h2>
+            <h2>Followers: {{users.followers}}</h2>
+            <h2>Member since: {{users.created_at|date}}</h2>
+            <a [href]="users.html_url" target="_blank" class="btn btn-success btn-sm"> Profile</a>
           </div>
      </div>
   </div>

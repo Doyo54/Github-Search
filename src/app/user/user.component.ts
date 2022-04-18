@@ -8,16 +8,21 @@ import { Users } from '../users';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  searches:Users
+  users:Users
   public Users:String;
+  public showUser=false;
 
-  constructor( private Service:GithubService) {}
-
-  public addUser(){
-    this.Service.getUsers(this.Users).subscribe((data) =>{
-     this.searches = data;
-  })
+addUser(){
+  this.Service.getUsers(this.Users)
+  this.showUser = true;
 }
-ngOnInit(): void {
+
+
+
+
+  constructor( public Service:GithubService) {
+  }
+ngOnInit() {
+  this.users = this.Service.users; 
 }
 }

@@ -7,7 +7,7 @@ import { Users } from '../users';
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit {
-@Input () searches:Users
+@Input () users:Users
   constructor() { }
 
   ngOnInit(): void {
