@@ -1,27 +1,19 @@
-# GithubSearch
+# Project Name
+Github-Search
+BY:DOYO ABDIKADIR DOYO
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+# Description
+This is an application where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
 
-## Development server
+# Project setup instructions
+Clone or download and unzip the repository from github, https://github.com/Doyo54/Github-Search.
+If you have git Use this command git clone * to clone the project.
+Run ng serve from your terminal 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# link to live site on GitHub Pages
+https://doyo54.github.io/Github-Search/
 
-## Code scaffolding
+# Copyright and license information
+The app is open source and in compliance with MIT License Copyright (c) 2022 {Doyo Abdikadir Doyo}
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
