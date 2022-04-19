@@ -22,10 +22,10 @@ h3, h4{
 
 .card,.card-body{
    font-size: xx-large;
-   background-color:lightgray;
-   border-radius: 1%;
 }
-   
+   .card{
+       background-color: transparent;
+   }
 .card-body .list-group h2 a:hover{
        background-color: lightblue;
 }

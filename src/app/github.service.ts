@@ -23,7 +23,7 @@ export class GithubService {
       created_at:any
     }
   let promise =new Promise<void>((resolve,reject)=>{
-     return this.http.get<ApiResponse>(`${environment.apiUrl}/${search}?${environment.accessToken}`)
+     return this.http.get<ApiResponse>(`${environment.apiUrl}/${search}?access_token'=${environment.accessToken}`)
      .toPromise().then(response=>{
       this.users.id=response.id;
       this.users.avatar_url=response.avatar_url;
@@ -42,7 +42,11 @@ export class GithubService {
   }
   
   getRepo(search): Observable<any[]>{
-    return this.http.get<any[]>(`${environment.apiUrl}/${search}/repos?${environment.accessToken}`);
+    return this.http.get<any[]>(`${environment.apiUrl}/${search}/repos?access_token'=${environment.accessToken}`);
+  }
+
+  getDoyo():Observable<any>{
+    return this.http.get<any>(`${environment.apiUrl}/Doyo54?access_token'=${environment.accessToken}`)
   }
   
 }

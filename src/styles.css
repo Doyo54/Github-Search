@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
 body{
    background: url(./assets/image3.jpg);
    height: fit-content;
@@ -14,12 +15,12 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #333;;
 }
   
 li{
     float: left;
-    margin-left: 30%;
+    margin-left: 2%;
     font-size: x-large;
 }
   
@@ -42,36 +43,36 @@ li a:hover(.active) {
   }
 
 form.form input[type=text] {
-      padding: 10px;
-      font-size: 30px;
-      border: 1px solid grey;
-      float: left;
-      width:fit-content;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 40px;
-      text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid grey;
+    float: left;
+    width:fit-content;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    text-align: center;
 }
   
 form.form button {
-      float: left;
-      width: 180px;
-      padding: 10px;
-      background:green;
-      color: white;
-      font-size: 30px;
-      border: 1px solid grey;
-      border-left: none;
-      border-radius: 40px;
-      cursor: pointer;
+    float: left;
+    width: 180px;
+    padding: 10px;
+    background:green;
+    color: white;
+    font-size: 30px;
+    border: 1px solid grey;
+    border-left: none;
+    border-radius: 40px;
+    cursor: pointer;
 }
     
 form.form button:hover {
-      background: #0b7dda;
+    background: #0b7dda;
 }
     
 form.form::after {
-      content: "";
-      clear: both;
-      display: table;
+    content: "";
+    clear: both;
+    display: table;
 }

@@ -12,6 +12,7 @@ import { GithubService } from './github.service';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { RepoDetailsComponent } from './repo-details/repo-details.component';
 import { DateCountPipe } from './date-count.pipe';
+import { MyProfileComponent } from './my-profile/my-profile.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DateCountPipe } from './date-count.pipe';
     ReposComponent,
     UserDetailsComponent,
     RepoDetailsComponent,
-    DateCountPipe
+    DateCountPipe,
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,
