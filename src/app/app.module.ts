@@ -11,6 +11,7 @@ import { importType } from '@angular/compiler/src/output/output_ast';
 import { GithubService } from './github.service';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { RepoDetailsComponent } from './repo-details/repo-details.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RepoDetailsComponent } from './repo-details/repo-details.component';
     UserComponent,
     ReposComponent,
     UserDetailsComponent,
-    RepoDetailsComponent
+    RepoDetailsComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

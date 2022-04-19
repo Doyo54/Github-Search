@@ -5,6 +5,7 @@
             <div class="list-group">
                 <div class="list-group-item mt-3" *ngFor="let repo of repo">
                     <h2><a href="{{repo.html_url}}" style="text-decoration: none;" class="text-primary" target="_blank">{{repo.name}}</a></h2> &nbsp; <h3> Created on: {{repo.created_at|date}}</h3>
+                    <h4>Updated {{repo.updated_at|date}} ago</h4>
                     <h4>Clone: {{repo.clone_url}}</h4>
                 </div>
             </div>
